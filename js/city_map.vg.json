@@ -18,12 +18,12 @@
         },
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
-          "longitude": {"field": "longitude", "type": "quantitative"},
-          "latitude": {"field": "latitude", "type": "quantitative"},
+          "longitude": {"field": "long", "type": "quantitative"},
+          "latitude": {"field": "lat", "type": "quantitative"},
           "size": {
-            "field": "mag",
+            "field": "s_number",
             "type": "quantitative",
-            "scale": {"domain": [4, 8]}
+            "scale": {"domain": [1, 3]}
           },
           "color": {
             "field": "depth",
