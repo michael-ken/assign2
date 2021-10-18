@@ -19,29 +19,28 @@
         "params":[
             {
             "name": "time_highlight",
-            "select": {"type": "point", "fields": ["s_number"]},
+            "select": {"type": "point", "fields": ["w_number"]},
             "bind": "legend"
             }
             ],
-           
         "mark": {"type": "circle", "tooltip": "encoding"},
         "encoding": {
           "longitude": {"field": "long", "type": "quantitative"},
           "latitude": {"field": "lat", "type": "quantitative"},
           "tooltip": [
             {"field": "city","type": "nominal","title": "City"},
-            {"field": "s_number", "type": "quantitative", "title": "Times Hosted"},
+            {"field": "w_number", "type": "quantitative", "title": "Times Hosted"},
             {"field": "years", "type": "nominal", "title": "Years Hosted"}
         ],
           "size": {
-            "field": "s_number",
+            "field": "w_number",
             "type": "nominal",
-            "scale": {"domain": ["1", "2", "3"], "range": ["30", "50", "70"]}
+            "scale": {"domain": ["1","2"], "range": ["30", "50"]}
           },
           "color": {
-            "field": "s_number",
+            "field": "w_number",
             "type": "nominal",
-            "scale": {"domain": ["1", "2", "3"], "scheme": "oranges"},
+            "scale": {"domain": ["1","2"], "scheme": "blues"},
             "legend": {"title": "Times Hosted", "titleFontSize": 15, "labelFontSize": 15, "symbolSize": 15}
           },
           "opacity": {
