@@ -1,1 +1,7 @@
-
+.heading { 
+    font-family: arial;
+    font-size: 30;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
