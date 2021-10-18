@@ -14,7 +14,7 @@
       },
       {
         "data": {
-          "url": "https://github.com/michael-ken/assign2/blob/main/data/cities.csv"
+          "url": "https://raw.githubusercontent.com/michael-ken/assign2/main/data/cities.csv"
         },
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
