@@ -12,8 +12,28 @@
   
 </head>
 <body>
-  
-<div id="symbol_map"></div>
+<div>
+    <div style="width: 30%; float: left;"><img src="data/rings.png" style="max-width: 100%; height: auto;"></div>
+    <div style="width: 40%;float: left"><h1 class="heading">Cities Hosting the Olympic Games</h1><h2 class="heading"></h2></div>
+    <div style="width: 30%; float: right;"><img src="data/rings.png" style="max-width: 100%; height: auto;"></div>
+</div>
+
+<div>
+    <div style="width: 50%; float: left;"><h3 class="heading">Summer Games</h3></div>
+    <div style="width: 50%; float: right;"><h3 class="heading">Winter Games</h3></div>
+</div>
+
+<div>
+    <div style="width: 50%; float: left;"><p class="heading">The following cities have hosted the summer olympic games. Click on the legend to filter by number of times hosted.</p></div>
+    <div style="width: 50%; float: right;"><p class="heading">The following cities have hosted the winter olympic games. Click on the legend to filter by number of times hosted.</p></div>
+</div>
+
+<div>
+    <div id="symbol_map" style="width: 50%; float: left;"></div>
+    <div id="symbol_map_2" style="width: 50%; float: right;"></div>
+</div>
+
+
 
 <script type="text/javascript">
 
@@ -21,7 +41,16 @@
   vegaEmbed('#symbol_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+
+  var spec3 = "js/winter_map.vg.json";
+  vegaEmbed('#symbol_map_2', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
 </script>
+
+
+
+
 
 </body>
 </html>
